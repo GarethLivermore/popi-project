@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderQuantities Renders correctly 1`] = `
+<div>
+  <h1
+    style={
+      Object {
+        "color": "skyblue",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <p />
+    Alert when level exceeds: 
+    <br />
+    <input
+      onBlur={[Function]}
+      type="text"
+    />
+  </div>
+  <button
+    className="btn btn-info"
+    disabled={false}
+    onClick={[Function]}
+    style={
+      Object {
+        "marginTop": 10,
+      }
+    }
+    type="button"
+  >
+    Hide
+  </button>
+</div>
+`;
