@@ -9,6 +9,7 @@
     "react": "^16.1.1",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
+    "react-easy-chart": "^1.0.0",
     "react-scripts": "1.0.14",
     "react-test-renderer": "^16.1.1",
     "serialport": "^6.0.4",
