@@ -93,7 +93,7 @@ io.on('connection', (client) => {
     client.on('subscribeToSensors', (interval) => {
         setInterval(() => {
             console.log("light works");
-            sensor.lux = sensor.lux = (Math.round(Math.random()*(1200-400+1)+200));
+            sensor.lux = sensor.lux = (Math.round(Math.random()*(100+1)+1));
             client.emit('completedOrders', sensor);
         }, interval);
     });
