@@ -79,6 +79,7 @@ let sensor = {
     temperature: 0
 };
 let comments = [];
+let interval = 20000;
 
 io.on('connection', (client) => {
     client.on('subscribeToSensors', (interval) => {
@@ -86,25 +87,12 @@ io.on('connection', (client) => {
         setInterval(() => {
             console.log("humidity works");
             sensor.humidity = sensor.humidity = hum;
-            client.emit('completedOrders', sensor);
-        }, interval);
-    });
-
-    client.on('subscribeToSensors', (interval) => {
-        setInterval(() => {
-            console.log("light works");
+            sensor.temperature = sensor.temperature = temp;
             sensor.lux = sensor.lux = (Math.round(Math.random()*(100+1)+1));
             client.emit('completedOrders', sensor);
         }, interval);
     });
 
-    client.on('subscribeToSensors', (interval) => {
-        setInterval(() => {
-            console.log("temp works");
-            sensor.temperature = sensor.temperature = temp;
-            client.emit('completedOrders', sensor);
-        }, interval);
-    });
 
     client.on('subscribeToComments', (interval) => {
         setInterval(() => {

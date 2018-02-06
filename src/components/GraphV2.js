@@ -10,11 +10,11 @@ class Graph extends React.Component{
   render () {
     //change this to every 2 hours
     let data = [
-          {name: '12am', light: this.props.light[0], temperature: this.props.temp[0], humidity: this.props.humidity[0]},
-          {name: '6am', light: this.props.light[1], temperature: this.props.temp[1], humidity: this.props.humidity[1]},
-          {name: '12pm', light: this.props.light[2], temperature: this.props.temp[2], humidity: this.props.humidity[2]},
-          {name: '6pm', light: this.props.light[3], temperature: this.props.temp[3], humidity: this.props.humidity[3]},
-          {name: '10pm', light: this.props.light[4], temperature: this.props.temp[4], humidity: this.props.humidity[4]},
+          {name: this.props.dataValues.time[0], light: this.props.dataValues.luxVal[0], temperature: this.props.dataValues.tempVal[0], humidity: this.props.dataValues.humVal[0]},
+          {name: this.props.dataValues.time[1], light: this.props.dataValues.luxVal[1], temperature: this.props.dataValues.tempVal[1], humidity: this.props.dataValues.humVal[1]},
+          {name: this.props.dataValues.time[2], light: this.props.dataValues.luxVal[2], temperature: this.props.dataValues.tempVal[2], humidity: this.props.dataValues.humVal[2]},
+          {name: this.props.dataValues.time[3], light: this.props.dataValues.luxVal[3], temperature: this.props.dataValues.tempVal[3], humidity: this.props.dataValues.humVal[3]},
+          {name: this.props.dataValues.time[4], light: this.props.dataValues.luxVal[4], temperature: this.props.dataValues.tempVal[4], humidity: this.props.dataValues.humVal[4]},
     ];
     return (
       <LineChart width={900} height={400} data={data}

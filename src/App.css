@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
@@ -31,9 +35,14 @@
   padding: 30px 0px;
   margin-bottom: 20px;
   border: 2px solid skyblue;
+  color: #337ab7;
+}
+#headerJumbo {
+  border-bottom: 2px solid skyblue;
 }
 
 #center {
   display: flex;
   justify-content: center;
+
 }

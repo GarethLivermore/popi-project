@@ -58,7 +58,7 @@ export default class SensorParameters extends React.Component{
 
                     Alert when level exceeds: <br></br><input type='text' onBlur={this.changeLimit}/>
                 </div>
-                <Button bsStyle="info" onClick={this.buttonClick} style={{marginTop: 10}}>{show === 'yes' ? 'Hide' : 'View Tips'}</Button>
+                <Button bsStyle="info" onClick={this.buttonClick} style={{marginTop: 10}}>{show === 'yes' ? 'Hide' : 'Show'}</Button>
             </div>
         )
     }
